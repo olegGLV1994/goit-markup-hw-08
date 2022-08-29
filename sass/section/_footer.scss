@@ -1,0 +1,143 @@
+.footer {
+  background-color: var(--footer-bcg-color);
+  &__container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  &__address {
+    display: flex;
+    flex-wrap: nowrap;
+    font-style: normal;
+  }
+}
+
+.adrress-list__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.adress-list__link {
+  &--logo {
+    color: #ffffff;
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.03em;
+    margin-bottom: 20px;
+    display: block;
+  }
+  &--adress {
+    font-weight: 400;
+    line-height: 1.7;
+    color: #ffffff;
+    font-style: normal;
+    transition: cubic-bezier(0.4, 0, 0.2, 1) color 250ms;
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+  &--contacts {
+    font-weight: 400;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    transition: cubic-bezier(0.4, 0, 0.2, 1) color 250ms;
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+}
+
+.footer-connect {
+  margin-left: 70px;
+  margin-top: 12px;
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+}
+
+.connect-list {
+  gap: 10px;
+  display: flex;
+  &__link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    transition: cubic-bezier(0.4, 0, 0.2, 1) background-color 250ms;
+    &:focus,
+    &:hover {
+      background-color: var(--accent-color);
+      border-radius: 50%;
+    }
+  }
+  &__icon {
+    fill: #ffffff;
+  }
+}
+
+.footer-form {
+  margin-left: 93px;
+  margin-top: 12px;
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+}
+
+.footer-form-container {
+  display: flex;
+  flex-wrap: nowrap;
+  &__input {
+    height: 50px;
+    width: 358px;
+    max-width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+    color: #ffffff;
+    padding-left: 16px;
+  }
+  &__button {
+    width: 200px;
+    height: 50px;
+    background: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    border-color: transparent;
+    cursor: pointer;
+    margin-left: 12px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 28px;
+  }
+  &__icon {
+    position: absolute;
+    right: 28px;
+    fill: #ffffff;
+  }
+}

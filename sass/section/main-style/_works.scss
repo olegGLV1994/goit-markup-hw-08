@@ -1,0 +1,29 @@
+.work {
+  padding-top: 0;
+}
+
+.work-list {
+  display: flex;
+  gap: 30px;
+  &__item {
+    position: relative;
+  }
+  &__text {
+    position: absolute;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #ffffff;
+  }
+  &__text--active {
+    position: absolute;
+    background: rgba(47, 48, 58, 0.8);
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

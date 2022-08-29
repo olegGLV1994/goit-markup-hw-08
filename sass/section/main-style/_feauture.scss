@@ -1,0 +1,43 @@
+.feauture-list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  &__item {
+    @include tablet {
+      width: calc((100% - 30px) / 2);
+    }
+    @include desktop {
+      width: calc((100% - 90px) / 4);
+    }
+  }
+  &__title {
+    color: var(--primery-title-color);
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: center;
+    @include tablet {
+      text-align: start;
+    }
+  }
+  &__text {
+    color: var(--text-color);
+    font-weight: 400;
+    line-height: 1.7;
+  }
+
+  &__icon {
+    background: #f5f4fa;
+    border-radius: 4px;
+    max-width: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    height: 120px;
+    @include tablet {
+      max-width: 354px;
+    }
+  }
+}

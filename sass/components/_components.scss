@@ -1,0 +1,41 @@
+body {
+  background-color: #ffffff;
+  color: var(--primery-title-color);
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.title {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: calc(33px / 28px);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  @include desktop {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42px / 36px);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 50px;
+  }
+}
+
+.section-padding {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include desktop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.footer-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
