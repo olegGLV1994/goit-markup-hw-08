@@ -221,24 +221,26 @@ button {
 .menu-close {
   background-color: #ffffff;
   border: none;
-  margin-bottom: 15px;
   display: block;
   margin-left: auto;
-  padding: 21px;
+  position: absolute;
+  right: 15px;
+  top: 10px;
 }
 
 .mob-menu {
-  position: absolute;
+  position: fixed;
   background-color: #ffffff;
   height: 100%;
   width: 100%;
   left: 0;
   top: 0;
+  padding: 48px 0 48px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.mob-menu-list {
-  padding-left: 40px;
-}
 .mob-menu-list__item:not(:last-child) {
   margin-bottom: 32px;
 }
@@ -250,9 +252,6 @@ button {
   color: var(--primery-title-color);
 }
 
-.menu-contacts {
-  padding-left: 40px;
-}
 .menu-contacts__item:not(:last-child) {
   margin-bottom: 32px;
 }
@@ -274,8 +273,6 @@ button {
 
 .mob-soc-list {
   display: flex;
-  gap: 20px;
-  padding-left: 40px;
   margin-top: 64px;
 }
 .mob-soc-list__link {
@@ -284,6 +281,12 @@ button {
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196f3;
+  padding-right: 10px;
+}
+
+.mob-soc-list__item:not(:last-child) {
+  margin-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .hero {
