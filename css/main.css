@@ -222,6 +222,9 @@ button {
   background-color: #ffffff;
   border: none;
   margin-bottom: 15px;
+  display: block;
+  margin-left: auto;
+  padding: 21px;
 }
 
 .mob-menu {
@@ -233,6 +236,9 @@ button {
   top: 0;
 }
 
+.mob-menu-list {
+  padding-left: 40px;
+}
 .mob-menu-list__item:not(:last-child) {
   margin-bottom: 32px;
 }
@@ -244,6 +250,9 @@ button {
   color: var(--primery-title-color);
 }
 
+.menu-contacts {
+  padding-left: 40px;
+}
 .menu-contacts__item:not(:last-child) {
   margin-bottom: 32px;
 }
@@ -264,6 +273,9 @@ button {
 }
 
 .mob-soc-list {
+  display: flex;
+  gap: 20px;
+  padding-left: 40px;
   margin-top: 64px;
 }
 .mob-soc-list__link {
