@@ -1,6 +1,6 @@
 .hero {
   background-color: var(--footer-bcg-color);
-  min-height: 600px;
+  min-height: 400px;
   display: flex;
   align-items: center;
   background-image: linear-gradient(
@@ -8,37 +8,64 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../Img/hero-img.jpg);
+    url(../Img/hero-img-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 94px;
-  padding-bottom: 94px;
-  &__container {
-    text-align: center;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
+  background-position: center;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  @include tablet {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../Img/header-img-tablet.jpg);
   }
+  @include desktop {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../Img/header-img-desktop.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    min-height: 600px;
+  }
+
   &__title {
-    max-width: 696px;
-    margin: 0 auto;
-    color: #ffffff;
-    margin-top: 0;
-    margin-bottom: 30px;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.3;
+    font-size: 26px;
+    line-height: 1.62;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 30px;
+    @include tablet {
+      margin: 0 auto;
+      max-width: 360px;
+      margin-bottom: 30px;
+    }
+    @include desktop {
+      font-weight: 900;
+      font-size: 44px;
+      line-height: 1.36;
+      text-align: center;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #ffffff;
+      max-width: 696px;
+    }
   }
   &__button {
     background-color: var(--accent-color);
     color: #ffffff;
     cursor: pointer;
     font-weight: 700;
+    margin: 0 auto;
+    display: block;
     font-size: 16px;
     line-height: 1.8;
     text-align: center;
