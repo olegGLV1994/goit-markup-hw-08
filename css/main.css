@@ -149,7 +149,7 @@ button {
 }
 
 .header-list {
-  display: none;
+  display: flex;
   margin: 32px 0;
   margin-left: 93px;
 }
@@ -183,8 +183,8 @@ button {
 }
 
 .header-contacts {
-  display: none;
   margin-bottom: 0;
+  display: flex;
   margin-left: auto;
 }
 .header-contacts .header-contacts__item + .header-contacts__item {
@@ -216,6 +216,7 @@ button {
   background-color: #ffffff;
   border: none;
   margin-left: auto;
+  display: none;
 }
 
 .menu-close {
@@ -229,6 +230,7 @@ button {
 }
 
 .mob-menu {
+  display: none;
   position: fixed;
   background-color: #ffffff;
   height: 100%;

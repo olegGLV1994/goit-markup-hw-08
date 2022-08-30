@@ -25,8 +25,8 @@
 }
 
 .header-list {
-  display: none;
-  // display: flex;
+  // display: none;
+  display: flex;
   margin: 32px 0;
   margin-left: 93px;
   & &__item + &__item {
@@ -61,9 +61,9 @@
 }
 
 .header-contacts {
-  display: none;
+  // display: none;
   margin-bottom: 0;
-  // display: flex;
+  display: flex;
   margin-left: auto;
   & &__item + &__item {
     margin-left: 50px;
@@ -91,4 +91,3 @@
 .portfolio-header {
   border: 1px solid #ececec;
 }
-
