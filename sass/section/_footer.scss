@@ -28,6 +28,9 @@
   @include desktop {
     padding: 0;
   }
+  @include desktop {
+    text-align: start;
+  }
 }
 
 .adrress-list__item:not(:last-child) {
@@ -49,6 +52,9 @@
       line-height: calc(28px / 24px);
       text-align: center;
     }
+  }
+  @include desktop {
+    text-align: start;
   }
   &--adress {
     font-weight: 400;

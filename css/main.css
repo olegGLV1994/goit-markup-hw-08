@@ -468,6 +468,11 @@ button {
 .work {
   padding-top: 0;
 }
+@media screen and (max-width: 1200px) {
+  .work {
+    display: none;
+  }
+}
 
 .work-list {
   display: flex;
@@ -675,6 +680,11 @@ button {
     padding: 0;
   }
 }
+@media screen and (min-width: 1200px) {
+  .adrress-list {
+    text-align: start;
+  }
+}
 
 .adrress-list__item:not(:last-child) {
   margin-bottom: 9px;
@@ -695,6 +705,11 @@ button {
     font-size: 24px;
     line-height: 1.1666666667;
     text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .adress-list__link {
+    text-align: start;
   }
 }
 .adress-list__link--adress {
