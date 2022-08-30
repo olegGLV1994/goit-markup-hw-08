@@ -137,7 +137,14 @@ button {
   font-size: 26px;
   line-height: 1.0769230769;
   color: #000000;
-  padding: 16px 0;
+}
+@media screen and (min-width: 768px) {
+  .header-navigation__link {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.1666666667;
+    letter-spacing: 0.03em;
+  }
 }
 
 .logo {
@@ -153,6 +160,16 @@ button {
   margin: 32px 0;
   margin-left: 93px;
 }
+@media screen and (max-width: 767px) {
+  .header-list {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header-list {
+    margin-left: 87px;
+  }
+}
 .header-list .header-list__item + .header-list__item {
   margin-left: 50px;
 }
@@ -162,6 +179,11 @@ button {
   letter-spacing: 0.02em;
   padding: 36px 0;
   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+@media screen and (min-width: 768px) {
+  .header-list__link {
+    padding: 32px 0;
+  }
 }
 .header-list__link:hover, .header-list__link:focus {
   color: var(--accent-color);
@@ -183,21 +205,37 @@ button {
 }
 
 .header-contacts {
-  margin-bottom: 0;
-  display: flex;
   margin-left: auto;
 }
-.header-contacts .header-contacts__item + .header-contacts__item {
-  margin-left: 50px;
+@media screen and (max-width: 767px) {
+  .header-contacts {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-contacts {
+    display: flex;
+    align-items: center;
+  }
+}
+.header-contacts__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .header-contacts__item:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
 }
 .header-contacts__link {
   color: var(--text-color);
   font-weight: 500;
   letter-spacing: 0.02em;
   display: flex;
-  align-items: center;
+  align-items: start;
   flex-direction: row-reverse;
   fill: #757575;
+  justify-content: start;
   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 .header-contacts__link:hover, .header-contacts__link:focus {
@@ -216,7 +254,11 @@ button {
   background-color: #ffffff;
   border: none;
   margin-left: auto;
-  display: none;
+}
+@media screen and (min-width: 768px) {
+  .menu-open {
+    display: none;
+  }
 }
 
 .menu-close {
@@ -230,7 +272,6 @@ button {
 }
 
 .mob-menu {
-  display: none;
   position: fixed;
   background-color: #ffffff;
   height: 100%;
@@ -252,6 +293,12 @@ button {
   line-height: 1.175;
   letter-spacing: 0.02em;
   color: var(--primery-title-color);
+}
+.mob-menu-list__link--active {
+  color: #2196f3;
+}
+.mob-menu-list__link:active {
+  color: #2196f3;
 }
 
 .menu-contacts__item:not(:last-child) {
@@ -591,19 +638,17 @@ button {
 .footer {
   background-color: var(--footer-bcg-color);
 }
-.footer__container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 60px;
-  padding-bottom: 60px;
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .footer {
+    text-align: center;
+  }
 }
 .footer__address {
-  display: flex;
-  flex-wrap: nowrap;
   font-style: normal;
+}
+
+.adress-list {
+  margin-bottom: 60px;
 }
 
 .adrress-list__item:not(:last-child) {
@@ -618,6 +663,13 @@ button {
   letter-spacing: 0.03em;
   margin-bottom: 20px;
   display: block;
+}
+@media screen and (min-width: 480px) {
+  .adress-list__link--logo {
+    font-size: 24px;
+    line-height: 1.1666666667;
+    text-align: center;
+  }
 }
 .adress-list__link--adress {
   font-weight: 400;
@@ -643,6 +695,7 @@ button {
 .footer-connect {
   margin-left: 70px;
   margin-top: 12px;
+  margin: 0 auto;
 }
 .footer-connect__title {
   font-weight: 700;
@@ -655,6 +708,7 @@ button {
 .connect-list {
   gap: 10px;
   display: flex;
+  justify-content: center;
 }
 .connect-list__link {
   width: 44px;
@@ -742,12 +796,16 @@ button {
 
 .modal {
   position: absolute;
-  width: 528px;
-  height: 581px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 40px;
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 .modal__title {
   font-weight: 700;
@@ -837,6 +895,17 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+@media screen and (min-width: 1200px) {
+  .checkbox-list {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 .checkbox-list span {
   width: 16px;
@@ -854,12 +923,19 @@ button {
 }
 .checkbox-list__link {
   margin-left: 5px;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .checkbox-list__link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 .checkbox-list__icon {
   fill: currentColor;

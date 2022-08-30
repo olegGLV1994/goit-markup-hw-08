@@ -12,7 +12,13 @@
     font-size: 26px;
     line-height: calc(28px / 26px);
     color: #000000;
-    padding: 16px 0;
+
+    @include tablet {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: calc(28px / 24px);
+      letter-spacing: 0.03em;
+    }
   }
 }
 
@@ -25,10 +31,15 @@
 }
 
 .header-list {
-  // display: none;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
   display: flex;
   margin: 32px 0;
   margin-left: 93px;
+  @include tablet {
+    margin-left: 87px;
+  }
   & &__item + &__item {
     margin-left: 50px;
   }
@@ -37,6 +48,9 @@
     font-weight: 500;
     letter-spacing: 0.02em;
     padding: 36px 0;
+    @include tablet {
+      padding: 32px 0;
+    }
     transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
     &:hover,
     &:focus {
@@ -61,21 +75,31 @@
 }
 
 .header-contacts {
-  // display: none;
-  margin-bottom: 0;
-  display: flex;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @include desktop {
+    display: flex;
+    align-items: center;
+  }
   margin-left: auto;
-  & &__item + &__item {
-    margin-left: 50px;
+  &__item:not(:last-child) {
+    margin-bottom: 10px;
+    @include desktop {
+      margin-bottom: 0;
+      margin-right: 30px;
+    }
   }
   &__link {
     color: var(--text-color);
     font-weight: 500;
     letter-spacing: 0.02em;
     display: flex;
-    align-items: center;
+    align-items: start;
     flex-direction: row-reverse;
     fill: #757575;
+    justify-content: start;
     transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
     &:hover,
     &:focus {
