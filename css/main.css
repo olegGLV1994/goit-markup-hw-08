@@ -282,6 +282,7 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  z-index: 1;
 }
 
 .mob-menu-list__item:not(:last-child) {
@@ -1062,9 +1063,22 @@ button {
 }
 
 .radio-buttons {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: 8px;
+}
+@media screen and (min-width: 768px) {
+  .radio-buttons {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .radio-buttons {
+    margin-bottom: 50px;
+  }
 }
 .radio-buttons__button {
   background-color: #f5f4fa;
@@ -1088,30 +1102,50 @@ button {
 }
 
 .cards-list {
-  margin-top: 0;
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
+  margin-top: 0;
+  gap: 28px;
+}
+@media screen and (min-width: 1200px) {
+  .cards-list {
+    gap: 30px;
+  }
 }
 .cards-list__item {
-  width: 370px;
-  margin-right: 30px;
-  margin-bottom: 30px;
-}
-.cards-list__item:nth-child(3n) {
-  margin-right: 0;
+  max-width: 370px;
 }
 .cards-list__link {
   transition: cubic-bezier(0.4, 0, 0.2, 1) box-shadow 250ms;
   outline: none;
   display: inline-block;
 }
+@media screen and (min-width: 768px) {
+  .cards-list__link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+}
 .cards-list__link:hover, .cards-list__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .cards-container {
+  width: 450px;
   position: relative;
   overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+  .cards-container {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cards-container {
+    width: 370px;
+  }
 }
 .cards-container__text {
   position: absolute;
@@ -1136,6 +1170,17 @@ button {
 .cards-box {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
+}
+@media screen and (min-width: 768px) {
+  .cards-box {
+    width: 354px;
+    flex-grow: 1;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cards-box {
+    width: 370px;
+  }
 }
 .cards-box__title {
   font-weight: 700;
