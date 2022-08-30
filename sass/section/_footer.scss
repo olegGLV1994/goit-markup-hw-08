@@ -1,17 +1,33 @@
 .footer {
   background-color: var(--footer-bcg-color);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px 0;
   @media screen and (min-width: 480px) and (max-width: 767px) {
     text-align: center;
   }
   &__address {
-    // display: flex;
-    // flex-wrap: nowrap;
     font-style: normal;
+    @include tablet {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+    @include desktop {
+      display: flex;
+      flex-wrap: nowrap;
+    }
   }
 }
 
-.adress-list {
-  margin-bottom: 60px;
+.adrress-list {
+  @include tablet {
+    text-align: center;
+    padding-left: 76px;
+  }
+  @include desktop {
+    padding: 0;
+  }
 }
 
 .adrress-list__item:not(:last-child) {
@@ -24,6 +40,7 @@
     font-family: "Raleway";
     font-weight: 700;
     font-size: 26px;
+    line-height: calc(31px / 26px);
     letter-spacing: 0.03em;
     margin-bottom: 20px;
     display: block;
@@ -58,9 +75,15 @@
 }
 
 .footer-connect {
-  margin-left: 70px;
-  margin-top: 12px;
   margin: 0 auto;
+  margin-top: 60px;
+  @include desktop {
+    margin-top: 12px;
+    margin-left: 70px;
+  }
+  @include tablet {
+    margin-top: 12px;
+  }
   &__title {
     font-weight: 700;
     font-size: 14px;
@@ -95,8 +118,15 @@
 }
 
 .footer-form {
-  margin-left: 93px;
-  margin-top: 12px;
+  @include desktop {
+    margin-left: 93px;
+  }
+
+  margin-top: 60px;
+  @include desktop {
+    margin-left: 93px;
+    margin-top: 12px;
+  }
   &__title {
     font-weight: 700;
     font-size: 14px;
@@ -105,15 +135,25 @@
     text-transform: uppercase;
     color: #ffffff;
     margin-bottom: 20px;
+    @include tablet {
+      text-align: center;
+    }
+    @include desktop {
+      text-align: start;
+    }
   }
 }
 
 .footer-form-container {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  justify-content: center;
+  @include desktop {
+    flex-wrap: nowrap;
+  }
   &__input {
     height: 50px;
-    width: 358px;
+    width: 100%;
     max-width: 100%;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -121,6 +161,9 @@
     background-color: transparent;
     color: #ffffff;
     padding-left: 16px;
+    @include desktop {
+      width: 358px;
+    }
   }
   &__button {
     width: 200px;
@@ -129,6 +172,7 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     font-weight: 700;
+    margin-top: 20px;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
@@ -141,6 +185,9 @@
     align-items: center;
     justify-content: space-between;
     padding-left: 28px;
+    @include desktop {
+      margin-top: 0;
+    }
   }
   &__icon {
     position: absolute;
