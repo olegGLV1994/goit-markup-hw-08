@@ -1,5 +1,7 @@
 .hero {
   background-color: var(--footer-bcg-color);
+  max-width: 1600px;
+  margin: 0 auto;
   min-height: 400px;
   display: flex;
   align-items: center;
