@@ -69,6 +69,10 @@
 }
 
 .team-list-icon__svg {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-list-icon__svg {
   fill: #afb1b8;
   .team-list-icon__link:hover & {
     fill: #ffffff;
