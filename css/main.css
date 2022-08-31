@@ -44,11 +44,7 @@ img {
   display: block;
   height: auto;
   max-width: 100%;
-}
-@media screen and (min-width: 480px) {
-  img {
-    width: 100%;
-  }
+  width: 100%;
 }
 
 p,
@@ -554,6 +550,7 @@ button {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   max-width: 450px;
+  width: 450px;
 }
 @media screen and (min-width: 768px) {
   .team-list__item {
@@ -696,7 +693,7 @@ button {
   .footer__address {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -709,7 +706,6 @@ button {
 @media screen and (min-width: 768px) {
   .adrress-list {
     text-align: center;
-    padding-left: 76px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -771,7 +767,6 @@ button {
 }
 
 .footer-connect {
-  margin: 0 auto;
   margin-top: 60px;
 }
 @media screen and (min-width: 1200px) {
