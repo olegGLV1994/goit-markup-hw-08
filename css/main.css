@@ -44,7 +44,11 @@ img {
   display: block;
   height: auto;
   max-width: 100%;
-  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  img {
+    width: 100%;
+  }
 }
 
 p,
@@ -1158,9 +1162,13 @@ button {
 }
 
 .cards-container {
-  width: 450px;
   position: relative;
   overflow: hidden;
+}
+@media screen and (min-width: 480px) {
+  .cards-container {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 768px) {
   .cards-container {
