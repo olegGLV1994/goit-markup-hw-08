@@ -577,13 +577,13 @@ button {
   margin-bottom: 16px;
 }
 
-.team-list-icon {
+.soc-list {
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
   gap: 10px;
 }
-.team-list-icon__link {
+.soc-list__link {
   width: 44px;
   height: 44px;
   display: flex;
@@ -592,22 +592,25 @@ button {
   transition: cubic-bezier(0.4, 0, 0.2, 1) background-color 250ms;
   border-radius: 50%;
 }
-.team-list-icon__link:hover, .team-list-icon__link:focus {
+.soc-list__link--background {
+  background: rgba(255, 255, 255, 0.1);
+}
+.soc-list__link:hover, .soc-list__link:focus {
   background-color: var(--accent-color);
   border-radius: 50%;
 }
 
-.team-list-icon__svg {
+.soc-list__svg {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-list-icon__svg {
+.soc-list__svg {
   fill: #afb1b8;
 }
-.team-list-icon__link:hover .team-list-icon__svg {
+.soc-list__link:hover .soc-list__svg {
   fill: #ffffff;
 }
-.team-list-icon__link:focus .team-list-icon__svg {
+.soc-list__link:focus .soc-list__svg {
   fill: #ffffff;
 }
 
@@ -780,32 +783,6 @@ button {
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
-}
-
-.connect-list {
-  gap: 10px;
-  display: flex;
-  justify-content: center;
-}
-.connect-list__link {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgba(255, 255, 255, 0.1);
-  transition: cubic-bezier(0.4, 0, 0.2, 1) background-color 250ms;
-}
-.connect-list__link:focus, .connect-list__link:hover {
-  background-color: var(--accent-color);
-  border-radius: 50%;
-}
-.connect-list__icon {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.connect-list__icon {
-  fill: #ffffff;
 }
 
 .footer-form {

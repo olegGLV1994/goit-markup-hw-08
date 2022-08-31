@@ -99,33 +99,6 @@
   }
 }
 
-.connect-list {
-  gap: 10px;
-  display: flex;
-  justify-content: center;
-  &__link {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.1);
-    transition: cubic-bezier(0.4, 0, 0.2, 1) background-color 250ms;
-    &:focus,
-    &:hover {
-      background-color: var(--accent-color);
-      border-radius: 50%;
-    }
-  }
-  &__icon {
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  &__icon {
-    fill: #ffffff;
-  }
-}
-
 .footer-form {
   @include desktop {
     margin-left: 93px;
