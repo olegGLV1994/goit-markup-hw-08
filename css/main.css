@@ -330,6 +330,11 @@ button {
   display: flex;
   margin-top: 64px;
 }
+@media screen and (max-width: 479px) {
+  .mob-soc-list {
+    flex-wrap: wrap;
+  }
+}
 .mob-soc-list__link {
   font-weight: 500;
   font-size: 18px;
