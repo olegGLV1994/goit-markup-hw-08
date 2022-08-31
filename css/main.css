@@ -600,6 +600,10 @@ button {
   border-radius: 50%;
 }
 
+.footer-connect .soc-list__svg {
+  fill: #ffffff;
+}
+
 .soc-list__svg {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
