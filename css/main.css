@@ -20,8 +20,7 @@
   border: 0;
   padding: 0;
   clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
+  clip-path: inset(50%);
   margin: -1px;
 }
 
@@ -356,7 +355,7 @@ button {
   min-height: 400px;
   display: flex;
   align-items: center;
-  background-image: var(--gradient), url(../Img/hero-img-mobile.jpg);
+  background-image: var(--gradient), url(./img-hero/hero-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -365,22 +364,22 @@ button {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: var(--gradient), url(../Img/hero-mobile-2x.jpg);
+    background-image: var(--gradient), url(./img-hero/hero-mobile@2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: var(--gradient), url(../Img/header-img-tablet.jpg);
+    background-image: var(--gradient), url(./img-hero/hero-tablet.jpg);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: var(--gradient), url(../Img/header-img-tablet-2x.jpg);
+    background-image: var(--gradient), url(./img-hero/hero-tablet@2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: var(--gradient), url(../Img/header-img-desktop.jpg);
+    background-image: var(--gradient), url(./img-hero/hero-desktop.jpg);
     padding-top: 200px;
     padding-bottom: 200px;
     min-height: 600px;
@@ -388,7 +387,7 @@ button {
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: var(--gradient), url(../Img/header-img-desktop-2x.jpg);
+    background-image: var(--gradient), url(./img-hero/hero-desktop@2x.jpg);
   }
 }
 .hero__title {
@@ -1028,8 +1027,7 @@ button {
   font-size: 12px;
   line-height: 1.1666666667;
   letter-spacing: 0.03em;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration-line: underline;
   color: var(--accent-color);
 }
 @media screen and (min-width: 1200px) {
