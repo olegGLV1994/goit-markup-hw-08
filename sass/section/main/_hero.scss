@@ -15,15 +15,15 @@
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: var(--gradient), url(/img/hero-mobile@2x.jpg);
+    background-image: var(--gradient), url("/img/hero-mobile@2x.jpg");
   }
   @include tablet {
-    background-image: var(--gradient), url(/img/hero-tablet.jpg);
+    background-image: var(--gradient), url("/img/hero-tablet.jpg");
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: var(--gradient), url(/img/hero-tablet@2x.jpg);
+      background-image: var(--gradient), url("/img/hero-tablet@2x.jpg");
     }
   }
   @include desktop {
